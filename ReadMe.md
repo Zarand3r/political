@@ -10,5 +10,8 @@ Make a nested parser for the Leip data start here https://uselectionatlas.org/RE
 - Parse out all the county urls https://uselectionatlas.org/RESULTS/statesub.php?year=2004&fips=1091&f=0&off=0&elect=0 or just vary the fips parameter
 - Parse out the votes from the table of the source of each county view-source:https://uselectionatlas.org/RESULTS/statesub.php?year=2004&fips=1091&f=0&off=0&elect=0
 
+SVD Implementation
+- Documentation: https://surprise.readthedocs.io/en/stable/getting_started.html
+
 Prototype uses the surprise library SVD (try the SVDpp too)
 For time SVD++, take inspiration from here https://github.com/leo1023/timeSVDpp_librec_based/blob/master/timeSVDpp.py

@@ -12451,18 +12451,6 @@ year,state,state_po,county,FIPS,office,candidate,party,candidatevotes,totalvotes
 2000,Wyoming,WY,Weston,56045,President,George W. Bush,republican,2521,3060,20191203
 2000,Wyoming,WY,Weston,56045,President,Ralph Nader,green,26,3060,20191203
 2000,Wyoming,WY,Weston,56045,President,Other,NA,64,3060,20191203
-2000,Connecticut,NA,Statewide writein,NA,President,Al Gore,democrat,NA,0,20191203
-2000,Maine,NA,Maine UOCAVA,NA,President,Al Gore,democrat,NA,0,20191203
-2000,Rhode Island,NA,Federal Precinct,NA,President,Al Gore,democrat,NA,0,20191203
-2000,Connecticut,NA,Statewide writein,NA,President,George W. Bush,republican,NA,0,20191203
-2000,Maine,NA,Maine UOCAVA,NA,President,George W. Bush,republican,NA,0,20191203
-2000,Rhode Island,NA,Federal Precinct,NA,President,George W. Bush,republican,NA,0,20191203
-2000,Connecticut,NA,Statewide writein,NA,President,Ralph Nader,green,NA,0,20191203
-2000,Maine,NA,Maine UOCAVA,NA,President,Ralph Nader,green,NA,0,20191203
-2000,Rhode Island,NA,Federal Precinct,NA,President,Ralph Nader,green,NA,0,20191203
-2000,Connecticut,NA,Statewide writein,NA,President,Other,NA,NA,0,20191203
-2000,Maine,NA,Maine UOCAVA,NA,President,Other,NA,NA,0,20191203
-2000,Rhode Island,NA,Federal Precinct,NA,President,Other,NA,NA,0,20191203
 2004,Alabama,AL,Autauga,1001,President,John Kerry,democrat,4758,20081,20191203
 2004,Alabama,AL,Autauga,1001,President,George W. Bush,republican,15196,20081,20191203
 2004,Alabama,AL,Autauga,1001,President,Other,NA,127,20081,20191203
@@ -21805,15 +21793,6 @@ year,state,state_po,county,FIPS,office,candidate,party,candidatevotes,totalvotes
 2004,Wyoming,WY,Weston,56045,President,John Kerry,democrat,580,3392,20191203
 2004,Wyoming,WY,Weston,56045,President,George W. Bush,republican,2739,3392,20191203
 2004,Wyoming,WY,Weston,56045,President,Other,NA,73,3392,20191203
-2004,Connecticut,NA,Statewide writein,NA,President,John Kerry,democrat,NA,0,20191203
-2004,Maine,NA,Maine UOCAVA,NA,President,John Kerry,democrat,NA,0,20191203
-2004,Rhode Island,NA,Federal Precinct,NA,President,John Kerry,democrat,NA,0,20191203
-2004,Connecticut,NA,Statewide writein,NA,President,George W. Bush,republican,NA,0,20191203
-2004,Maine,NA,Maine UOCAVA,NA,President,George W. Bush,republican,NA,0,20191203
-2004,Rhode Island,NA,Federal Precinct,NA,President,George W. Bush,republican,NA,0,20191203
-2004,Connecticut,NA,Statewide writein,NA,President,Other,NA,NA,0,20191203
-2004,Maine,NA,Maine UOCAVA,NA,President,Other,NA,NA,0,20191203
-2004,Rhode Island,NA,Federal Precinct,NA,President,Other,NA,NA,0,20191203
 2008,Alabama,AL,Autauga,1001,President,Barack Obama,democrat,6093,23641,20191203
 2008,Alabama,AL,Autauga,1001,President,John McCain,republican,17403,23641,20191203
 2008,Alabama,AL,Autauga,1001,President,Other,NA,145,23641,20191203
@@ -31156,15 +31135,6 @@ year,state,state_po,county,FIPS,office,candidate,party,candidatevotes,totalvotes
 2008,Wyoming,WY,Weston,56045,President,Barack Obama,democrat,658,3414,20191203
 2008,Wyoming,WY,Weston,56045,President,John McCain,republican,2618,3414,20191203
 2008,Wyoming,WY,Weston,56045,President,Other,NA,138,3414,20191203
-2008,Connecticut,NA,Statewide writein,NA,President,Barack Obama,democrat,NA,0,20191203
-2008,Maine,NA,Maine UOCAVA,NA,President,Barack Obama,democrat,NA,0,20191203
-2008,Rhode Island,NA,Federal Precinct,NA,President,Barack Obama,democrat,NA,0,20191203
-2008,Connecticut,NA,Statewide writein,NA,President,John McCain,republican,NA,0,20191203
-2008,Maine,NA,Maine UOCAVA,NA,President,John McCain,republican,NA,0,20191203
-2008,Rhode Island,NA,Federal Precinct,NA,President,John McCain,republican,NA,0,20191203
-2008,Connecticut,NA,Statewide writein,NA,President,Other,NA,NA,0,20191203
-2008,Maine,NA,Maine UOCAVA,NA,President,Other,NA,NA,0,20191203
-2008,Rhode Island,NA,Federal Precinct,NA,President,Other,NA,NA,0,20191203
 2012,Alabama,AL,Autauga,1001,President,Barack Obama,democrat,6363,23932,20191203
 2012,Alabama,AL,Autauga,1001,President,Mitt Romney,republican,17379,23932,20191203
 2012,Alabama,AL,Autauga,1001,President,Other,NA,190,23932,20191203
@@ -40507,15 +40477,6 @@ year,state,state_po,county,FIPS,office,candidate,party,candidatevotes,totalvotes
 2012,Wyoming,WY,Weston,56045,President,Barack Obama,democrat,422,3359,20191203
 2012,Wyoming,WY,Weston,56045,President,Mitt Romney,republican,2821,3359,20191203
 2012,Wyoming,WY,Weston,56045,President,Other,NA,116,3359,20191203
-2012,Connecticut,NA,Statewide writein,NA,President,Barack Obama,democrat,39366,74045,20191203
-2012,Maine,NA,Maine UOCAVA,NA,President,Barack Obama,democrat,2071,74045,20191203
-2012,Rhode Island,NA,Federal Precinct,NA,President,Barack Obama,democrat,NA,74045,20191203
-2012,Connecticut,NA,Statewide writein,NA,President,Mitt Romney,republican,30450,74045,20191203
-2012,Maine,NA,Maine UOCAVA,NA,President,Mitt Romney,republican,858,74045,20191203
-2012,Rhode Island,NA,Federal Precinct,NA,President,Mitt Romney,republican,NA,74045,20191203
-2012,Connecticut,NA,Statewide writein,NA,President,Other,NA,1175,74045,20191203
-2012,Maine,NA,Maine UOCAVA,NA,President,Other,NA,125,74045,20191203
-2012,Rhode Island,NA,Federal Precinct,NA,President,Other,NA,NA,74045,20191203
 2016,Alabama,AL,Autauga,1001,President,Hillary Clinton,democrat,5936,24973,20191203
 2016,Alabama,AL,Autauga,1001,President,Donald Trump,republican,18172,24973,20191203
 2016,Alabama,AL,Autauga,1001,President,Other,NA,865,24973,20191203
@@ -49858,15 +49819,6 @@ year,state,state_po,county,FIPS,office,candidate,party,candidatevotes,totalvotes
 2016,Wyoming,WY,Weston,56045,President,Hillary Clinton,democrat,299,3526,20191203
 2016,Wyoming,WY,Weston,56045,President,Donald Trump,republican,3033,3526,20191203
 2016,Wyoming,WY,Weston,56045,President,Other,NA,194,3526,20191203
-2016,Connecticut,NA,Statewide writein,NA,President,Hillary Clinton,democrat,NA,5056,20191203
-2016,Maine,NA,Maine UOCAVA,NA,President,Hillary Clinton,democrat,3017,5056,20191203
-2016,Rhode Island,NA,Federal Precinct,NA,President,Hillary Clinton,democrat,637,5056,20191203
-2016,Connecticut,NA,Statewide writein,NA,President,Donald Trump,republican,NA,5056,20191203
-2016,Maine,NA,Maine UOCAVA,NA,President,Donald Trump,republican,648,5056,20191203
-2016,Rhode Island,NA,Federal Precinct,NA,President,Donald Trump,republican,53,5056,20191203
-2016,Connecticut,NA,Statewide writein,NA,President,Other,NA,NA,5056,20191203
-2016,Maine,NA,Maine UOCAVA,NA,President,Other,NA,321,5056,20191203
-2016,Rhode Island,NA,Federal Precinct,NA,President,Other,NA,38,5056,20191203
 2000,Alaska,AK,District 1,2001,President,Al Gore,democrat,1284,6656,20191203
 2000,Alaska,AK,District 1,2001,President,George W. Bush,republican,4681,6656,20191203
 2000,Alaska,AK,District 1,2001,President,Ralph Nader,green,475,6656,20191203
