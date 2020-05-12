@@ -72,7 +72,7 @@ def trainSVD_surprise(training_data, colorlabels, plot=True, savefig=True): #col
 		ax.set_xlabel('First', fontsize=15)
 		ax.set_ylabel('Second', fontsize=15)
 		ax.set_title('Reduced SVD', fontsize=20)
-		scatter = ax.scatter(U[:,0], U[:,1], U[:,2], c=colorlabels, s=10, alpha=0.7) #explore labeling colors with features like demographics, age
+		scatter = ax.scatter(U[:,0], U[:,1], c=colorlabels, s=10, alpha=0.7) #explore labeling colors with features like demographics, age
 		ax.grid()
 		cbar = fig.colorbar(scatter, ax=ax)
 		cbar.set_label("state")
