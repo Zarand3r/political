@@ -60,7 +60,7 @@ def trainSVD(X, colorlabels, plot=True, savefig=True):
 		plt.show()
 
 
-def trainSVD_surprise(training_data, colorlabels, plot=True, savefig=True): #colorlabels, sizelabels, plot=True, savefig=True
+def trainSVD_surprise(training_data, colorlabels, plot=True, simplify=False, savefig=True): #colorlabels, sizelabels, plot=True, savefig=True
 	# algo = SVD(n_factors=4, n_epochs=1000, biased=True)
 	# algo = SVD(n_factors=20, n_epochs=500, biased=False)
 	algo = SVDpp(n_factors=10, n_epochs=1000)
@@ -80,25 +80,29 @@ def trainSVD_surprise(training_data, colorlabels, plot=True, savefig=True): #col
 			plt.savefig("figures/svd_counties")
 		plt.show()
 
-	# U = U.transpose()
-	# A = np.linalg.svd(U)[0]
-	# U_proj = np.dot(A[:, :2].transpose(), U)
-	# # Rescale dimensions
-	# U_proj /= U_proj.std(axis=1).reshape(2, 1)
+	if simplify:
+		U = U.transpose()
+		A = np.linalg.svd(U)[0]
+		U_proj = np.dot(A[:, :2].transpose(), U)
+		# Rescale dimensions
+		U_proj /= U_proj.std(axis=1).reshape(2, 1)
+		if plot:
+			fig = plt.figure(figsize = (8,8))
+			ax = fig.add_subplot(1,1,1) 
+			ax.set_xlabel('First', fontsize = 15)
+			ax.set_ylabel('Second', fontsize = 15)
+			ax.set_title('Reduced SVD', fontsize = 20)
+			scatter = ax.scatter(U_proj[0], U_proj[1], c=colorlabels, s=10)
+			ax.grid()
+			cbar = fig.colorbar(scatter, ax=ax)
+			cbar.set_label("state")
+			if savefig:
+				plt.savefig("figures/svd_counties_simplfied")
+			plt.show()
+		return U_proj
 
-	# if plot:
-	# 	fig = plt.figure(figsize = (8,8))
-	# 	ax = fig.add_subplot(1,1,1) 
-	# 	ax.set_xlabel('First', fontsize = 15)
-	# 	ax.set_ylabel('Second', fontsize = 15)
-	# 	ax.set_title('Reduced SVD', fontsize = 20)
-	# 	scatter = ax.scatter(U_proj[0], U_proj[1], c=colorlabels, s=10)
-	# 	ax.grid()
-	# 	cbar = fig.colorbar(scatter, ax=ax)
-	# 	cbar.set_label("state")
-	# 	if savefig:
-	# 		plt.savefig("figures/svd_counties")
-	# 	plt.show()
+	return U
+
 
 def trainSVD_surprise3D(training_data, colorlabels, plot=True, savefig=True): #colorlabels, sizelabels, plot=True, savefig=True
 	# algo = SVD(n_factors=4, n_epochs=1000, biased=True)
