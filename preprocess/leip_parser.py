@@ -47,7 +47,11 @@ def get_links(html, filter=None):
 
 def get_votes(html):
 	soup = BeautifulSoup(html, "html.parser")
-	table = soup.find_all('tbody')[0]
+	try:
+		table = soup.find_all('tbody')[0]
+	except IndexError:
+		return None
+
 	candidates = []
 	votes = []
 	for row in table.find_all('tr'):
@@ -98,30 +102,42 @@ def load_primary_election(output_file="../data/primary.csv"):
 	years_list = np.arange(2000, 2020, step=4)
 
 	democratic_data = []
+	output_file1 = output_file[:-4]+"_democratic.csv"
 	for year in years_list:
+		error = 0
 		for index, fips in enumerate(fips_list): 
 			print(f"{index+1} / {total}")
 			county_url = f"https://uselectionatlas.org/RESULTS/statesub.php?year={year}&fips={fips}&elect=1&evt=P"
 			print(county_url)
 			county_html = get_html(county_url)
 			election_results = get_votes(county_html)
-			for result in election_results:
-				democratic_data.append([year, fips, result[0], result[1]])
-	output_file = output_file[:-4]+"_democratic.csv"
-	write_to_csv(democratic_data, output_file=output_file)
+			if election_results is None:
+				error += 1
+			else:
+				for result in election_results:
+					democratic_data.append([year, fips, result[0], result[1]])
+			if error > 3:
+				break
+		write_to_csv(democratic_data, output_file=output_file1)
 
 	republican_data = []
+	output_file2 = output_file[:-4]+"_republican.csv"
 	for year in years_list:
+		error = 0
 		for index, fips in enumerate(fips_list): 
 			print(f"{index+1} / {total}")
 			county_url = f"https://uselectionatlas.org/RESULTS/statesub.php?year={year}&fips={fips}&elect=2&evt=P"
 			print(county_url)
 			county_html = get_html(county_url)
 			election_results = get_votes(county_html)
-			for result in election_results:
-				republican_data.append([year, fips, result[0], result[1]])
-	output_file = output_file[:-4]+"_republican.csv"
-	write_to_csv(republican_data, output_file=output_file)
+			if election_results is None:
+				error += 1
+			else:
+				for result in election_results:
+					republican_data.append([year, fips, result[0], result[1]])
+			if error > 3:
+				break
+		write_to_csv(republican_data, output_file=output_file2)
 
 	return (democratic_data, republican_data)
 
